@@ -22,7 +22,6 @@ enum DISTANCE
  * SI1145 block
  */
 //%color=#444444 blockGap=8 icon="\uf185" block="SL01"
-//% groups = '["New SL01", "Old SL01", "other"]'
 namespace SL01 {
     let SI1145_I2C_ADDR = SI1145_ADDR.ADDR_0x60
 
@@ -139,8 +138,8 @@ namespace SL01 {
      * Ultra Violet Index
      * https://en.wikipedia.org/wiki/Ultraviolet_index
     */
-    //% block="SL01 show ultraviolet index"
-    //% weight=74 blockGap=8
+    //%block="SL01 show ultraviolet index"
+    //%weight=74 blockGap=8
     export function readUVI(): number {
         return (getUInt16LE(0x2C)/100)
     }
@@ -149,8 +148,8 @@ namespace SL01 {
      *  Ambient Light Intensity
      * https://en.wikipedia.org/wiki/Lux
     */
-    //% block="SL01 show ambient light intensity %unit"
-    //% weight=74 blockGap=8
+    //%block="SL01 show ambient light intensity %unit"
+    //%weight=74 blockGap=8
     export function readLight(unit: ILLUMINANCE): number {
         
         if(unit == ILLUMINANCE.LUX)
@@ -167,8 +166,8 @@ namespace SL01 {
     /**
      *  Proximity
     */
-    //% block="SL01 show proximity %unit"
-    //% weight=74 blockGap=8
+    //%block="SL01 show proximity %unit"
+    //%weight=74 blockGap=8
     export function readProximity(unit: DISTANCE): number {
 
         if(unit == DISTANCE.CENTIMETER)
