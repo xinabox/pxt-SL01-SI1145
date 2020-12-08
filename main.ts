@@ -167,16 +167,6 @@ namespace SL01 {
     }
 
     /**
-     *  Infra Red Intensity
-    */
-    //% block="SL01 show infra red intensity"
-    //% weight=74 blockGap=8
-    //% group="New SL01"
-    export function readIR(): number {
-        return getUInt16LE(0x24)
-    }
-
-    /**
      *  Proximity
     */
     //% block="SL01 show proximity %unit"

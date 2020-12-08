@@ -3,7 +3,8 @@
     "version": "0.0.15",
     "description": "",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -13,5 +14,8 @@
         "test.ts"
     ],
     "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
     "preferredEditor": "tsprj"
 }
