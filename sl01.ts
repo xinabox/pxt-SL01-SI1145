@@ -141,7 +141,6 @@ namespace SL01 {
     */
     //% block="SL01 show ultraviolet index"
     //% weight=74 blockGap=8
-    //% group="New SL01" 
     export function readUVI(): number {
         return (getUInt16LE(0x2C)/100)
     }
@@ -152,7 +151,6 @@ namespace SL01 {
     */
     //% block="SL01 show ambient light intensity %unit"
     //% weight=74 blockGap=8
-    //% group="New SL01"
     export function readLight(unit: ILLUMINANCE): number {
         
         if(unit == ILLUMINANCE.LUX)
@@ -171,7 +169,6 @@ namespace SL01 {
     */
     //% block="SL01 show proximity %unit"
     //% weight=74 blockGap=8
-    //% group="New SL01"
     export function readProximity(unit: DISTANCE): number {
 
         if(unit == DISTANCE.CENTIMETER)
